@@ -140,3 +140,5 @@ dist
 .env
 .env.production
 
+.DS_Store
+
