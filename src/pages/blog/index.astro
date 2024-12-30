@@ -9,24 +9,31 @@ const posts = (await getCollection("blog")).sort(
 ---
 
 <Page>
+	<h1>All Blog Posts</h1>
 	<section>
-		<ul>
+		<ul class="space-y-8">
 			{
 				posts.map((post) => (
-					<li>
-						<a href={`/blog/${post.id}/`}>
+					<li class="flex items-center space-x-4 ml-8">
+						<a href={`/blog/${post.id}/`} class="flex items-center space-x-4">
+							<!-- Image -->
 							<img
-								width={720}
-								height={360}
-								src={post.data.heroImage}
-								alt=""
+							src={post.data.heroImage}
+							alt=""
+							class="w-32 h-20 rounded-lg object-cover"
 							/>
-							<h4 class="title">{post.data.title}</h4>
-							<p class="date">
+							<!-- Content -->
+							<div>
+							<h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
+								{post.data.title}
+							</h4>
+							<p class="text-sm text-gray-500">
 								<FormattedDate date={post.data.pubDate} />
 							</p>
+							</div>
 						</a>
 					</li>
+
 				))
 			}
 		</ul>
