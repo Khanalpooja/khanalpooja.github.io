@@ -7,8 +7,12 @@ import react from '@astrojs/react';
 
 import tailwind from '@astrojs/tailwind';
 
+import alpinejs from '@astrojs/alpinejs';
+
 // https://astro.build/config
 export default defineConfig({
     site: 'https://example.com',
-    integrations: [mdx(), sitemap(), react(), tailwind()],
+    integrations: [mdx(), sitemap(), react(), tailwind({
+        applyBaseStyles: false,
+    }), alpinejs()],
 });
