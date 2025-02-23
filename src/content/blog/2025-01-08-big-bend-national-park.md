@@ -1,0 +1,200 @@
+---
+title: "Big Bend National Park: From Cactus to Cosmos"
+pubDate: '2025-01-28'
+description: "Big Bend National Park: epic views, desert vibes, and the best night skies you’ll ever see"
+heroImage: '/national-parks/bigbendnp.jpg'
+---
+
+There’s something about a sky full of stars that makes you pause and question everything. How can the universe be so vast? What exactly is out there? And why does the world feel its prettiest in the dark? How can a world this breathtaking also have you in it? That’s exactly how I felt the first time I saw the night sky at Big Bend National Park—small, mesmerized, and somehow, incredibly special all at the same time.
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/night-1.jpg" alt="Beautiful night sky over Big Bend National Park">
+  <figcaption>
+    Beautiful night sky over Big Bend National Park
+  </figcaption>
+</div>
+
+Actually, there’s nothing more magical than lying under a billion or I would say gazillion stars, cuddled with someone special. And the best part is when both of you feel the same way like you're in this perfect little moment together. That night, I saw Jupiter, Venus,  Orion, Cassiopeia, and a bunch of other stars and constellations I couldn’t name. It was so beautiful and magical, like everything incredible in the universe had come together in that one moment. And somehow, I was a part of it, we were a part of it, and that moment itself was a part of it all. 
+
+
+
+Night skies were not the only reason I enjoyed the park so much but those were definitely my favorite moments. Overall, when you think of Texas, mountains aren’t the first thing that comes to mind. But to me, the mountains of Big Bend were exactly what Texas needed—rugged, towering, and undeniably beautiful. The Rio Grande, with its winding streams and sharp bends, creates a striking divide between two countries - US and Mexico, two economies, and likely more than two ways of life, all coexisting within a shared ecosystem. It was a thought-provoking moment, standing there and realizing just how much changes with something as simple—and as complex—as a line on a map.
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/see-river.jpg" alt="A beautiful view of the river">
+  <figcaption>
+    Looking over Rio Grande separating US and Mexico
+  </figcaption>
+</div>
+
+Another thing that stood out to me was how effortlessly the animals and birds moved and flew around the campsite. They weren’t exactly making friends, but it almost seemed that way as they wandered around like nothing in the world could bother them. Maybe nothing really does. And that is what I really love about these natural places and the outdoors - how everything just seems to exist in its own harmony, untouched by the chaos we humans bring. 
+
+I literally saw a coyote and a roadrunner strolling through the campground like they owned the place, completely unfazed by the people around them. It made me wonder how they’ve adapted to living so close to humans without causing any problems? There were also so many birds I couldn’t name and turtles I’d never seen before, each adding something special to this trip.
+
+Here is the itinerary for a memorable 3-4 day trip to Big Bend and naturally, we start from Dallas:
+
+## Day 1: The Journey Begins
+**Morning and Day** \
+We started driving at around 10 AM from from Dallas heading towards Cottonwood Campground. The total drive was around 9 hours. We tried to limit to fuel and bathroom breaks only and alternated driving alternated between the two of us, making the long journey manageable.
+  
+**Night** \
+We arrived at Cottonwood Campground just before nightfall. We Set up camp and enjoyed the most magical part of the trip for me- gazing at billions of stars and faraway galaxies in the clear night sky. 
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/night-2.jpg" alt="Camping in Big Bend National Park">
+  <figcaption>
+    Camping in Big Bend National Park
+  </figcaption>
+</div>
+
+## Day 2: Exploring the Parks Must See
+
+**Morning**
+- **Cottonwood Visitor Center** \
+After breakfast at campsite, we stopped at the visitor center to learn more about the park’s history and key landmarks.
+
+- **Santa Elena Canyon Trail** \
+This is a short and stunning 2-mile hike through towering canyon walls along one side of the huge and inspiring Rio Grande. This is a must do hike if you only want to do one hike in the whole park.
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/santa-elena.jpg" alt="Santa Elena Canyon">
+  <figcaption>
+    Santa Elena Canyon
+  </figcaption>
+</div>
+
+**Afternoon** 
+- **Tuff Canyon** \
+We explored the unique geological formations and different cactus species. Did you know there are pink cactus?
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/cactus.jpg" alt="Pink Cactus - violet pricklypear">
+  <figcaption>
+    Violet Pricklypear
+  </figcaption>
+</div>
+
+
+- **Mule’s Ear Viewpoint** \
+Took in panoramic views of the desert landscape.
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/mule-ear-2.JPG" alt="Mule's Ear">
+  <figcaption>
+    Mule's Ear Viewpoint
+  </figcaption>
+</div>
+
+- **Sotol Vista** \
+Sotol vista offers a panoramic view of the whole park. You get to see the high mountains, the faraway plains, the winding river and the Sanata Elena Canyon that once look so grand looks tiny here. 
+
+- **Sam Nail Ranch** \
+A peaceful stop filled with remnants of the park’s ranching history.
+
+- **Ross Maxwell Scenic Byway** \
+Drove along this picturesque route, enjoying the breathtaking views.
+
+- **Food Stop and a little sightseeing outside the park in Terlingua** \
+Terlingua needs a special separate mention for its amazing ghost town vibes. We tried the incredible Mexican food at Taquera El Milagro.  The Terlingua cemetery was something special too - simple, heratfelt and amazing like people leaving beer for their loved ones.  
+
+
+**Night** \
+After this adventurous day, we camped at the Rio Grande Village Campground for a peaceful rest again the under the starry skies.
+
+
+## Day 3: The Hikes 
+  
+
+**Morning and Afternoon** 
+- **Nature Trail**  \
+We did the short 0.75 mile nature trail starting at the Rio Grande Village campground. From the peak in US side, you can see the Rio grande separating two countries and a far away mexican village to pique your interest.
+- **Lost Mine Trail** \
+We ventured to Chisos Basin to discover the 5-mile hike which offers incredible views of the surrounding mountains and desert.
+One of my favorite parts about the actual landscape was the Chisos basin, which was lush in the middle of the mountains surrounded by desert. I’m not even sure if I’m explaining it right but that’s how it felt to me. Chisos basin actually felt like an Oasis.  We hiked the lost mine trail there and I’m glad we did. Looking back, I would have dreaded the climb so much if I had known the peak I was eyeing while driving around was the one we were heading for. The viewpoint at the top was absolutely breathtaking, especially with the trees still in their fall colors, even at the end of December. It felt surreal, almost unreal, to see that contrast from Chicago where it was already a wintery winter. It was again a beautiful reminder of nature’s simplicity; how different places, and even different people, experience seasons and weather in their own unique ways.
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/Lost_mine_peak.jpg" alt="Lost Mine Peak">
+  <figcaption>
+    Lost Mine Peak Overlooking the Chisos Basin
+  </figcaption>
+</div>
+
+**Evening and Night** \
+We drove back heading to Dallas after the hike and a stop at Chisos visitor center since we didn’t have accommodations for the third night at the park. On the way, we stopped for food and drinks at Midland at Macarena's. This small-town stop was a highlight for food and drinks, proving once again that Texas never disappoints in food department. 
+
+**In Dallas** \
+We reached Dallas early in the morning next day after taking a few nap breaks along the way. Running on little sleep but full of memories, we spent the day with friends and family, reminiscing about an unforgettable trip.
+
+
+## What I Missed A.K.A. What I will do on my next visit 
+
+For next time, I’d love to hike The Window Trail in the Chisos Basin and visit Boquillas del Carmen, a small Mexican border town just across the Rio Grande. 
+
+## Culinary Highlights
+Food is also a big part of what gets me excited to visit different places. Though, Tex-Mex was highlights of the trip, here is everything we tried.
+
+**Campsite foods**
+- Leftover biryani and momo we brought from Dallas - thanks to our lovely friends
+- Bread Guacamole - comfort breakfast 
+- Chicken sandwich 
+- Nepali snack noodle 
+- Tomato Soup - try it before you judge 
+  
+**Eating Out** 
+- Taquera El Milagro, Terlingua 
+  - Tacos 
+  - Enchilladas
+  - It was also BYOB and we got our own Athletic NA Beer 
+  
+- Macarena's, Midland
+  - Queso - It has become my new soul food 
+  - Chicken Fajita 
+  - A giant Jalapeno Maragrita for the drink 
+
+
+
+## Expenses
+Here is the breakdown of the expenses for our trip.
+- **Flight to Dallas:** $236
+- **Car Rental:** $160 for 4 days
+- **Gas:** Around $125
+- **Grocery:** $70
+- **Eating Out:** 100 for two meals for 2 people - not bad, eh?
+- **Accommodation:** $32 total for the campsite
+- **Miscellaneous:** $50 
+- **Park Entrance:** We have America the beautiful. So, entering the park was free. 
+- **Total** was around $800 for 2 People for 3/4 days. Also, spent some time in Dallas to get most out of the same fight ;) 
+
+
+## Travel Route
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1tu5kfnPhNRiNFjis2ZzxWA0y8tkzcNA&usp=sharing" width="640" height="480"></iframe>
+
+## Ease of Visit
+No pre-booking was required for our trip, though we did have to wait in line in the car for a while to access the Chisos Basin. Considering it was a holiday, the overall parking situation was quite fair, so there’s really nothing really to complain about.
+
+## Season and Driving Conditions
+We went to Big Bend in December 2024, and honestly, it was the perfect time to go. Winter is so much better than dealing with the scorching summer heat.
+Even though you go in the winter, it’s still the desert, so make sure you bring plenty of water. Nights can get pretty cold, so pack a warm jacket, but during the day, a light jacket or a few layers are more than enough. The drive was smooth overall but download an offline map before you go because there’s pretty much no cell service out there. A little prep will definitely make you feel comfortable. 
+
+
+
+## Final Thoughts
+
+<div class="image-caption">
+  <img src="/national-parks/bbnp/bbnp-sign.jpg" alt="Big Bend National Park Sign">
+  <figcaption>
+    Big Bend National Park Entrance
+  </figcaption>
+</div>
+
+Visiting Big Bend National park was more than a trip for me, it was an experience I can’t wait to do again. 
+Also, planning this trip was pretty easy and simple. Plan for the lodging and let the trip unfold naturally, and it will. We did the park in 3 days, but you can easily stretch it out or fit it into your own schedule. And if you are not a camping person, there are also some cabins and lodges which provide good experiences too. There’s something here for everyone, and no matter how you do it, I’m sure you’ll walk away with wonderful memories. 
+
+The only challenging part for me was the long, mundane drive to and from Dallas. But honestly, Big Bend was so worth it—I’d do it all over again if I ever get the chance.
+
+I never imagined Big Bend would leave such a special impact on me. The night skies alone made me forget all my worries. They reminded me to step back, look at the bigger picture, and see life as a gift rather than just a list of obligations. And of course, the food, people, and culture around and outside big bend and on the way to Dallas and in Dallas was everything I love about Texas. They added that extra something to the trip, making it even more unforgettable.
+
+If you’re planning to go, don’t forget to bring your ID—border patrol checks are part of the journey!
+
+

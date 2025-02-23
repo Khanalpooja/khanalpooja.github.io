@@ -1,0 +1,29 @@
+---
+import { getCollection } from "astro:content";
+import BlogPostCard from './BlogPostCard.astro';
+import FormattedDate from "./FormattedDate.astro";
+
+const posts = (await getCollection("blog")).sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+
+
+---
+
+<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
+    <main>
+      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
+        {posts.map((post) => (
+          <BlogPostCard
+            href={`/blog/${post.id}`}
+            heroImage={post.data.heroImage}
+            title={post.data.title}
+            category={post.data.category}
+            pubDate={post.data.pubDate}
+          />
+        ))}
+      </div>
+    </main>
+  </div>
+  

@@ -1,0 +1,41 @@
+---
+title: "Filling the Quiet"
+pubDate: '2025-02-19 10:48'
+description: "Filling the Quiet"
+heroImage: '/national-parks/sidewalk.jpeg'
+---
+
+This part of the city is quiet. The pulsating nightlife, the busy finance folks and the towering skylines- it has none of it. Despite its closeness to the downtown, it still feels far. It feels like a separate small town tucked away from the hustle and bustle of the big city. The most interesting thing in this area is the sidewalk. I find beauty in how the sidewalk changes with every season, and so does the mood of the people. I don’t know what’s my favorite - the golden leaves in fall, flowers blooming in spring or the fresh snow in winter. Maybe not the winter! 
+
+
+In the winter, I find myself longing for brighter, longer and warmer days. I sometimes lose myself in books and other times in the observation of people. The snow that falls on the ground muffles everything - the footsteps , the dead leaves from the trees, the conversations, and makes this place even more silent than before. Once in a while, a distant horn breaks the silence, and for a millisecond, I turn towards the street, peeking out from the wide windows of this century-old home. 
+
+I  have a neighbor in his early 70s. His back is slightly bent when he walks as if he is carrying the weight of time. His voice is loud and firm which makes me wonder if he was once someone who commanded a room with his words. On this snowy winter day, he is shoveling snow from the sidewalk. The way he does it - his movements look practiced and almost second nature. When he mentioned that he has lived here for more than 20 years, I was astonished. And by that I don’t mean judging, I appreciate the patience and stability it takes to stay in one place for so long and wondered how and why he did it. 
+
+
+<div class="image-caption">
+  <img src="national-parks/alone.jpg" alt="staring at the sunset alone">
+  <!-- <figcaption>
+    Staring at the sunset alone
+  </figcaption> -->
+</div>
+
+Later, he stands in his front yard with a few of his peers, their words are drifting through the cold air in hushed tones. I can’t quite make out their conversation from the inside of the building, but I imagine it weaves between the past and present, and also the quiet rhythm of everyday life.
+
+Whenever the mailman mistakenly delivers my package to his address, he takes the trouble to place it at my doorstep. I appreciate it, yet I’ve never said it out loud. Should I? Would a thank-you card be a thoughtful gesture, or would it feel unnecessary to him? Would it be just another piece of paper in a life that moves forward without expectation? 
+
+His television is always on. Even when he is outside, the light of the screen flares through his windows, and the loud sound seeps out a bit. Is it just a habit, or is it a lack of company? Is it a way to fill the silence of a house that no longer echoes with familiar voices? Or maybe, it’s nothing that deep - just a background noise, something he never thinks to turn off because it doesn’t bother him? 
+These days, I also hear his angry voice over the phone which cuts through the usual quiet. His words are muffled, but I understand the frustrating tone. I wonder who is he talking to? Someone important? Someone from his past? And why is he angry? Is it something with his life right now, or a deep wound from his past?  Should I be concerned or is it how he is? 
+
+
+His son lives in the same neighborhood by himself. I often hear them talking and spending holidays together but I wonder why and how they are by themselves and not together. Is it a cultural thing I’m yet to understand or some reasons that’s universal? He talked about his wife once in a fleeting conversation, which made me wonder what happened to her? Was theirs a love that slowly faded away, ending them to exist separately in the same world, connected only by a phase of life? Or was it fate that took her away, leaving him without the chance to say goodbye?
+
+
+> ### <span style="color:grey;">Which is the heavier grief? </span> 
+> ### <span style="color:grey;">Is it to lose someone slowly, realizing too late that they’re already gone? </span> 
+> ###  <span style="color:grey;">Or to lose them in an instant, with no time to hold on?</span> 
+
+
+I often look at him and wonder which is the heavier grief. Is it to lose someone slowly, realizing too late that they’re already gone? Or to lose them in an instant, with no time to hold on? Maybe loss, in whichever form, leaves behind the same silence, one that lingers in the calmness of falling snow or in the sound of an always-on television, in the quiet pauses between the words we never say and in the heavy stillness after ending a frustrating call. 
+
+I think about talking to him more, about unraveling the stories and the time he carries, but then I hesitate. Maybe we’re all just trying to fill the quiet in our own ways, through old routines, familiar voices, or the simple act of looking out for each other. And maybe that's enough. Maybe, we can fill the void with small and unspoken gestures - the shoveled sidewalks, the misplaced packages and just a simple smile as we pass through the hallways. And maybe, in our own ways, we all leave our television loud and always on.
