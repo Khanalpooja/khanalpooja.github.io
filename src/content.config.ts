@@ -12,6 +12,10 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
+		category: z.string().optional(),
+		tags: z.array(z.string()).optional(),
+		// The rest of the frontmatter is free-form
+		// and can be accessed as-is in your components.
 	}),
 });
 

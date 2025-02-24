@@ -2,13 +2,9 @@
 import { getCollection } from "astro:content";
 import BlogPostCard from './BlogPostCard.astro';
 import FormattedDate from "./FormattedDate.astro";
+import type { CollectionEntry } from 'astro:content';
 
-const posts = (await getCollection("blog")).sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
-
-
-
+const { posts }: { posts: CollectionEntry<"blog">[] } = Astro.props.posts;
 ---
 
 <div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
