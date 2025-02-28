@@ -4,8 +4,10 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro";
 import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
 import Page from "../layouts/Page.astro";
+import { Card } from "@/components/ui/card";
 
 import '@/styles/global.css';
+import RecentPosts from "@/components/blog/RecentPosts.astro";
 ---
 
 <Page>
@@ -15,4 +17,21 @@ import '@/styles/global.css';
 	<p>Hello, I'm Pooja.</p>
 	Join me in exploring the world through tech, travel, and storytelling—one adventure at a time. 
 	Let's navigate remote places, new ideas, and life's journeys together!
+
+	<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <!-- Left Column: Recent Posts -->
+        <div>
+            <RecentPosts />
+        </div>
+
+        <!-- Right Column: Add more content here -->
+        <div>
+			<Card >
+				Some stuff here
+			</Card>
+
+            <!-- Add content, images, widgets, etc. -->
+        </div>
+    </div>
+
 </Page>

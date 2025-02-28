@@ -1,0 +1,29 @@
+---
+import BlogPostCard from "@/components/blog/BlogPostCard.astro";
+import {Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle} from "@/components/ui/card";
+
+import type { CollectionEntry } from "astro:content";
+
+const { posts, header } = Astro.props as { posts: CollectionEntry<"blog">[], header: string };
+
+---
+
+<section>
+  <Card>
+    <CardContent>
+      <CardHeader>{header ? header : null}</CardHeader>
+      
+      <ul class="space-y-8">
+        {posts.map((post) => (
+          <BlogPostCard post={post} />
+        ))}
+      </ul>
+    </CardContent>
+  </Card>
+	
+</section>

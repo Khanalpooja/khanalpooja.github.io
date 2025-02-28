@@ -1,0 +1,18 @@
+---
+import { Card, CardContent } from "@/components/ui/card";
+
+const { src, alt, caption } = Astro.props;
+---
+
+<Card className="overflow-hidden rounded-lg shadow-lg">
+    <CardContent className="p-0">
+        <figure>
+            <img src={src} alt={alt} class="w-full object-cover rounded-t-lg" />
+            {caption && (
+                <figcaption class="p-3 text-center text-sm text-gray-600">
+                    {caption}
+                </figcaption>
+            )}
+        </figure>
+    </CardContent>
+</Card>
