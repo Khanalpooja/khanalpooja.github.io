@@ -1,25 +1,17 @@
 ---
-import { getCollection } from "astro:content";
-import BlogPostCard from './BlogPostCard.astro';
-import FormattedDate from "./FormattedDate.astro";
-import type { CollectionEntry } from 'astro:content';
+// src/components/BlogList.astro
+import BlogPostCard from "@/components/BlogPostCard.astro";
 
-const { posts }: { posts: CollectionEntry<"blog">[] } = Astro.props.posts;
+import type { CollectionEntry } from "astro:content";
+
+const { posts } = Astro.props as { posts: CollectionEntry<"blog">[] };
+
 ---
 
-<div class="container px-8 py-5 lg:py-8 mx-auto xl:px-5 max-w-screen-lg">
-    <main>
-      <div class="grid gap-10 lg:gap-10 md:grid-cols-2">
-        {posts.map((post) => (
-          <BlogPostCard
-            href={`/blog/${post.id}`}
-            heroImage={post.data.heroImage}
-            title={post.data.title}
-            category={post.data.category}
-            pubDate={post.data.pubDate}
-          />
-        ))}
-      </div>
-    </main>
-  </div>
-  
+<section>
+	<ul class="space-y-8">
+		{posts.map((post) => (
+			<BlogPostCard post={post} />
+		))}
+	</ul>
+</section>

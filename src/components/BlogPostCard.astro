@@ -1,43 +1,24 @@
 ---
-export interface BlogPostProps {
-  href: string;
-  heroImage: string;
-  title: string;
-  category?: string;
-  pubDate: string;
-}
+// src/components/BlogListItem.astro
+import FormattedDate from "@/components/FormattedDate.astro";
 
-const { href, heroImage, title, category = 'Uncategorized', pubDate } = Astro.props;
+const { post } = Astro.props;
 ---
 
-<div class="cursor-pointer group">
-  <!-- Blog Post Thumbnail -->
-  <div class="relative overflow-hidden transition-all bg-gray-100 rounded-md dark:bg-gray-800 hover:scale-105 aspect-video">
-    <a href={href}>
-      <img
-        src={heroImage}
-        alt={title}
-        class="w-full h-full rounded-md object-cover"
-      />
-    </a>
-  </div>
-
-  <!-- Blog Post Metadata -->
-  <a href={href}>
-    <span class="inline-block mt-5 text-xs font-medium tracking-wider uppercase text-orange-700">
-      {category}
-    </span>
-  </a>
-  <h2 class="mt-2 text-lg font-semibold tracking-normal text-gray-900 dark:text-white">
-    <a href={href}>
-      <span class="bg-gradient-to-r from-green-200 to-green-100 dark:from-purple-800 dark:to-purple-900 bg-[length:0px_10px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500 hover:bg-[length:100%_3px] group-hover:bg-[length:100%_10px]">
-        {title}
-      </span>
-    </a>
-  </h2>
-  <div class="flex items-center mt-3 space-x-3 text-gray-500 dark:text-gray-400">
-    <time class="text-sm" datetime={pubDate}>
-      {new Date(pubDate).toLocaleDateString()}
-    </time>
-  </div>
-</div>
+<li class="flex items-center space-x-4 ml-8">
+	<a href={`/blog/${post.id}/`} class="flex items-center space-x-4">
+		<img
+			src={post.data.heroImage ? post.data.heroImage : "/default-images/blog-placeholder.jpg"}
+			alt=""
+			class="w-32 h-20 rounded-lg object-cover"
+		/>
+		<div>
+			<h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
+				{post.data.title}
+			</h4>
+			<p class="text-sm text-gray-500">
+				<FormattedDate date={post.data.pubDate} />
+			</p>
+		</div>
+	</a>
+</li>
