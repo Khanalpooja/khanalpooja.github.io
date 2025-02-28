@@ -1,10 +1,10 @@
 ---
 // src/components/BlogListItem.astro
-import FormattedDate from "@/components/FormattedDate.astro";
+import FormattedDate from "./FormattedDate.astro";
+import type { CollectionEntry } from "astro:content";
 
-const { post } = Astro.props;
+const { post } = Astro.props as { post: CollectionEntry<"blog"> };
 ---
-
 <li class="flex items-center space-x-4 ml-8">
 	<a href={`/blog/${post.id}/`} class="flex items-center space-x-4">
 		<img
@@ -12,13 +12,32 @@ const { post } = Astro.props;
 			alt=""
 			class="w-32 h-20 rounded-lg object-cover"
 		/>
-		<div>
-			<h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
-				{post.data.title}
-			</h4>
-			<p class="text-sm text-gray-500">
-				<FormattedDate date={post.data.pubDate} />
-			</p>
-		</div>
+		<div class="space-y-0.5 leading-tight">
+      <h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
+          {post.data.title}
+      </h4>
+  
+      <div class="flex flex-col">
+          <p class="text-sm text-gray-500">
+              <FormattedDate date={post.data.pubDate} />
+          </p>
+  
+          <!-- {post.data.category && (
+              <p class="text-sm font-medium text-blue-500">
+                  Category: {post.data.category}
+              </p>
+          )} -->
+  
+          {post.data.tags && post.data.tags.length > 0 && (
+              <div class="flex flex-wrap gap-1 mt-1 w-full">
+                  {post.data.tags.map(tag => (
+                      <a href={`/tags/${tag}`} class="px-2 py-0.5 text-xs font-medium text-white bg-blue-500 rounded-full hover:bg-blue-600 transition">
+                          {tag}
+                      </a>
+                  ))}
+              </div>
+          )}
+      </div>
+  </div>  
 	</a>
 </li>

@@ -1,0 +1,19 @@
+---
+import { getUniqueTags } from "@/lib/utils";
+import Page from "@/layouts/Page.astro";
+
+const tags = await getUniqueTags();
+---
+
+<Page>
+    <h1>Tags</h1>
+    <ul class="flex flex-wrap gap-2">
+        {tags.map(tag => (
+            <li>
+                <a href={`/tags/${tag}`} class="px-3 py-1 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
+                    {tag}
+                </a>
+            </li>
+        ))}
+    </ul>
+</Page>

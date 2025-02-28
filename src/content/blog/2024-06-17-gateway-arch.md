@@ -2,7 +2,11 @@
 title: "Gateway Arch National Park"
 pubDate: '2024-06-17'
 description: 'Gateway Arch National Park'
-heroImage: 'national-parks/gateway_arch.jpg'
+heroImage: '/national-parks/gateway_arch.jpg'
+category: 'travel'
+tags:
+    - national-park
+    - missouri
 ---
 
 In February 2023, we visited Gateway Arch National Park, and it left me with mixed feelings. While I typically look forward to exploring vast natural landscapes in national parks, Gateway Arch presented a stark contrast with its historical and architectural focus. Initially, I wasn't sure if it met my expectations of what a national park should be. However, having friends with me made the experience much more enjoyable. Their company transformed the visit into a fun and memorable adventure, helping me appreciate the unique qualities of the park in a new light. It was a reminder that sometimes, it’s the people you're with who make all the difference in how you experience a place. 

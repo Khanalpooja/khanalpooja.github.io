@@ -2,7 +2,7 @@
 title: "Tallest Trees in the World : Redwoods National Park"
 pubDate: '2024-07-23 10:48'
 description: "Tallest Trees in the world - Redwoods National and State Parks"
-heroImage: 'national-parks/Redwoods_NP.jpg'
+heroImage: '/national-parks/Redwoods_NP.jpg'
 ---
 
 Have you ever seen the tallest trees in the world? We got to visit Redwoods National and State Parks, where you can find the tallest trees on Earth. These redwoods are like giants of the forest, and being among them felt like stepping into a whole new world.

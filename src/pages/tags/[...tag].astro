@@ -1,0 +1,45 @@
+---
+import { getCollection } from "astro:content";
+import BlogList from "@/components/BlogList.astro";
+import Page from "@/layouts/Page.astro";
+
+
+
+
+
+// Generate dynamic paths for each tag
+export async function getStaticPaths() {
+    // Extract unique tags
+    const posts = await getCollection("blog");
+    const tagsSet = new Set<string>();
+    posts.forEach(post => {
+        post.data.tags?.forEach(tag => tagsSet.add(tag));
+    });
+    const tags = Array.from(tagsSet).sort();
+    
+
+    return tags.map(tag => {
+        const filteredPosts = posts.filter(post => post.data.tags?.includes(tag));
+        return {
+            params: { tag },
+            props: { posts: filteredPosts }
+        }
+    });
+}
+
+// Get the current tag from the URL
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+// Filter posts with the selected tag
+
+---
+
+<Page>
+    <h1>Posts tagged: {tag}</h1>
+    
+    {posts.length > 0 ? (
+        <BlogList posts={posts} />
+    ) : (
+        <p>No posts found for this tag.</p>
+    )}
+</Page>

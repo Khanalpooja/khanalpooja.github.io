@@ -11,33 +11,5 @@ const posts = (await getCollection("blog")).sort(
 
 <Page>
 	<h1>All Blog Posts</h1>
-	<section>
-		<ul class="space-y-8">
-			{
-				posts.map((post) => (
-					<li class="flex items-center space-x-4 ml-8">
-						<a href={`/blog/${post.id}/`} class="flex items-center space-x-4">
-							
-							<img
-							src={post.data.heroImage? post.data.heroImage : "/default-images/blog-placeholder.jpg"}
-							alt=""
-							class="w-32 h-20 rounded-lg object-cover"
-							/>
-							
-							<div>
-							<h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
-								{post.data.title}
-							</h4>
-							<p class="text-sm text-gray-500">
-								<FormattedDate date={post.data.pubDate} />
-							</p>
-							</div>
-						</a>
-					</li>
-
-				))
-			}
-		</ul>
-		<!-- <BlogList posts={posts} /> -->
-	</section>
+	<BlogList posts={posts} />
 </Page>
