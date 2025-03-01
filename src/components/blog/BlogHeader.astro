@@ -24,7 +24,7 @@ const {
 ---
 <header class="mb-8 text-center">
     <!-- Title -->
-    <h1 class="text-5xl font-bold text-gray-900 mb-10">{title}</h1>
+    <h1 class="text-4xl font-bold text-gray-900 mb-10">{title}</h1>
 
     <!-- Hero Image (Centered) -->
     {
@@ -40,7 +40,7 @@ const {
     }
 
     <!-- Metadata (Author, Date, Read Time) -->
-    <div class="text-gray-600 text-md mt-4 flex flex-wrap justify-center gap-4">
+    <div class="text-gray-600 text-sm mt-4 flex flex-wrap justify-center gap-4">
         {author && <span class="font-medium">By {author}</span>}
         <span><FormattedDate date={pubDate} /></span>
         {readTime && <span>⏳ {readTime} min read</span>}
