@@ -10,6 +10,5 @@ const posts = (await getCollection("blog")).sort(
 ---
 
 <Page>
-	<h1>All Blog Posts</h1>
-	<BlogList posts={posts} />
+	<BlogList posts={posts} header="All Blog Posts"/>
 </Page>

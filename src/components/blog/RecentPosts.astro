@@ -4,17 +4,25 @@ import BlogList from "@/components/blog/BlogList.astro";
 
 // Fetch all blog posts and sort by date (latest first)
 const posts = (await getCollection("blog")).sort(
-    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+    (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 
 // Limit to the latest 5 posts
 const latestPosts = posts.slice(0, 5);
 ---
 
-<section class="mt-8">    
-    {latestPosts.length > 0 ? (
-        <BlogList posts={latestPosts} header="Recent Blog Posts"/>
-    ) : (
-        <p>No recent blog posts available.</p>
-    )}
+<section class="mt-8">
+    {
+        latestPosts.length > 0 ? (
+            <BlogList posts={latestPosts} header="Recent Blog Posts">
+                <span slot="footer">
+                    <a href="/blog" class="text-blue-500 hover:underline">
+                        View all blog posts
+                    </a>
+                </span>
+            </BlogList>
+        ) : (
+            <p>No recent blog posts available.</p>
+        )
+    }
 </section>

@@ -9,21 +9,24 @@ import {Card,
 
 import type { CollectionEntry } from "astro:content";
 
-const { posts, header } = Astro.props as { posts: CollectionEntry<"blog">[], header: string };
+const { posts, header, footer } = Astro.props as { posts: CollectionEntry<"blog">[], header: string, footer: any };
 
 ---
 
 <section>
   <Card className="shadow-lg">
+    <CardHeader><h4>{header ? header : null}</h4></CardHeader>
     <CardContent>
-      <CardHeader>{header ? header : null}</CardHeader>
-      
       <ul class="space-y-8">
         {posts.map((post) => (
           <BlogPostCard post={post} />
         ))}
       </ul>
     </CardContent>
+    <CardFooter>
+      <slot name="footer" />
+    </CardFooter>
+
   </Card>
 	
 </section>
