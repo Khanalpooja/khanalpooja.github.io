@@ -14,7 +14,7 @@ const { posts, header } = Astro.props as { posts: CollectionEntry<"blog">[], hea
 ---
 
 <section>
-  <Card>
+  <Card className="shadow-lg">
     <CardContent>
       <CardHeader>{header ? header : null}</CardHeader>
       

@@ -15,11 +15,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 <Page title={title} description={description}>
 	<article>
 		<BlogHeader 
-            title={title}
-            description={description}
-            pubDate={pubDate}
-            updatedDate={updatedDate}
-            heroImage={heroImage}
+			{...Astro.props}
         />
 		<div class="prose">
 			<slot />

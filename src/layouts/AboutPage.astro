@@ -1,6 +1,6 @@
 ---
 import Page from "../layouts/Page.astro";
-
+import Divider from "@/components/ui/divider";
 const { frontmatter } = Astro.props;
 ---
 
@@ -11,8 +11,10 @@ const { frontmatter } = Astro.props;
 			alt="Me"
 			class="mx-auto rounded-full w-full md:w-1/2"
 		/>
+		<br />
 
-		<h1 class="mb-4 text-center">{frontmatter.title}</h1>
+		<h1 class="text-center">{frontmatter.title}</h1>
+		<br />
 		<slot />
 	</div>
 </Page>

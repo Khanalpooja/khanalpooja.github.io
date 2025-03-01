@@ -2,57 +2,43 @@
 import HeaderLink from './HeaderLink.astro';
 import Socials from './Socials.astro';
 import { SITE_TITLE } from '../consts';
+
+const navLinks = [
+  { name: "Home", href: "/" },
+  { name: "Blog", href: "/blog" },
+  { name: "About", href: "/about" },
+];
+
 ---
 
-<header>
-	<nav class="px-16">
-		<h2><a href="/">{SITE_TITLE}</a></h2>
-		<div class="internal-links">
-			<HeaderLink href="/">Home</HeaderLink>
-			<HeaderLink href="/blog">Blog</HeaderLink>
-			<HeaderLink href="/about">About</HeaderLink>
-		</div>
-		<Socials />
-	</nav>
-</header>
-<style>
-	header {
-		margin: 0;
-		padding: 0 1em;
-		background: white;
-		box-shadow: 0 2px 8px rgba(var(--black), 5%);
-	}
-	h2 {
-		margin: 0;
-		font-size: 1.5em;
-	}
+<header class="border-b bg-white text-black shadow-md py-1">
+	<div x-data="{ open: false }">
+		<nav class="px-6 md:px-8 lg:px-16 flex items-center justify-between h-16">
+			<!-- Left: SITE_TITLE -->
+			<h2 class="text-3xl font-bold">
+				<a href="/" class="text-gray-900 hover:text-blue-600 transition">{SITE_TITLE}</a>
+			</h2>
 
-	h2 a,
-	h2 a.active {
-		text-decoration: none;
-	}
-	nav {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav a {
-		padding: 1em 0.5em;
-		color: var(--black);
-		border-bottom: 4px solid transparent;
-		text-decoration: none;
-	}
-	nav a.active {
-		text-decoration: none;
-		border-bottom-color: var(--accent);
-	}
-	.social-links,
-	.social-links a {
-		display: flex;
-	}
-	@media (max-width: 720px) {
-		.social-links {
-			display: none;
-		}
-	}
-</style>
+			<!-- Center: Navigation Links (Hidden on mobile, centered on desktop) -->
+			<div class="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+				{
+				navLinks.map(({ name, href }) => <HeaderLink href={href}>{name}</HeaderLink>
+				)}
+			</div>
+
+			<!-- Right: Mobile Menu Button -->
+			<button @click="open = !open" class="md:hidden focus:outline-none">
+				<i class="fas fa-bars text-2xl text-gray-700"></i> <!-- Hamburger Icon -->
+			</button>
+		</nav>
+
+		<!-- Mobile Menu (Alpine.js) -->
+		<div 
+			x-show="open" 
+			x-transition 
+			class="md:hidden flex flex-col items-center space-y-4 py-4 bg-white shadow-md border-t border-gray-200 w-full"
+		>
+			{navLinks.map(({ name, href }) => <HeaderLink href={href} >{name}</HeaderLink>)}
+		</div>
+	</div>
+</header>

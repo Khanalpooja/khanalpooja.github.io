@@ -1,30 +1,69 @@
 ---
 import FormattedDate from "@/components/FormattedDate.astro";
+import Divider from "@/components/ui/divider";
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const {
+    title,
+    description,
+    pubDate,
+    updatedDate,
+    heroImage,
+    author,
+    readTime,
+    tags,
+} = Astro.props as {
+    title: string;
+    description?: string;
+    pubDate: Date;
+    updatedDate?: Date;
+    heroImage?: string;
+    author?: string;
+    readTime?: number;
+    tags?: string[];
+};
 ---
+<header class="mb-8 text-center">
+    <!-- Title -->
+    <h1 class="text-5xl font-bold text-gray-900 mb-10">{title}</h1>
 
-<header class="mb-6">
-    {heroImage && (
-        <div class="hero-image w-full max-h-[400px] overflow-hidden relative aspect-[16/9]">
-            <img 
-                src={heroImage} 
-                alt={title} 
-                class="absolute inset-0 w-full h-full object-cover rounded-lg"
-            />
-        </div>
-    )}
+    <!-- Hero Image (Centered) -->
+    {
+        heroImage && (
+            <div class="hero-image w-full max-w-4xl mx-auto my-6 overflow-hidden rounded-lg shadow-lg">
+                <img
+                    src={heroImage}
+                    alt={title}
+                    class="w-full max-h-[450px] object-cover rounded-lg"
+                />
+            </div>
+        )
+    }
 
-    <div class="title mt-4">
-        <div class="date text-gray-600 text-sm">
-            <FormattedDate date={pubDate} />
-            {updatedDate && (
-                <div class="last-updated-on text-xs text-gray-500">
-                    Last updated on <FormattedDate date={updatedDate} />
-                </div>
-            )}
-        </div>
-        <h1 class="text-4xl font-bold mt-2">{title}</h1>
-        <hr class="mt-4" />
+    <!-- Metadata (Author, Date, Read Time) -->
+    <div class="text-gray-600 text-md mt-4 flex flex-wrap justify-center gap-4">
+        {author && <span class="font-medium">By {author}</span>}
+        <span><FormattedDate date={pubDate} /></span>
+        {readTime && <span>⏳ {readTime} min read</span>}
     </div>
+
+    <!-- Tags (Separate Line) -->
+    {
+        tags && tags.length > 0 && (
+            <div class="flex flex-wrap justify-center gap-2 mt-3">
+                <span class="text-sm font-medium text-gray-600">Tags:</span>
+                {tags.map((tag) => (
+                    <a
+                        href={`/tags/${tag}`}
+                        class="px-3 py-1 text-xs font-medium text-white bg-blue-500 rounded-full hover:bg-blue-600 transition"
+                    >
+                        {tag}
+                    </a>
+                ))}
+            </div>
+        )
+    }
+    <!-- Divider -->
+    <Divider />
 </header>
+
+
