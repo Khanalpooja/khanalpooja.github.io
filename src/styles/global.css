@@ -3,10 +3,11 @@
   https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css
   License MIT: https://github.com/HermanMartinus/bearblog/blob/master/LICENSE.md
  */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* @plugin "@tailwindcss/typography"; */
 
 :root {
 	--accent: #2337ff;
@@ -152,8 +153,8 @@ pre>code {
 blockquote {
 	border-left: 4px solid var(--accent);
 	padding: 0 0 0 20px;
-	margin: 0px;
-	font-size: 1.333em;
+	margin: 2em;
+	font-size: 0.8em;
 }
 
 hr {
