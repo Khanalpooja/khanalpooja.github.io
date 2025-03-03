@@ -3,6 +3,10 @@ title: "The Weekend Trips"
 pubDate: '2024-06-17 10:48'
 description: 'The Weekend Trips Series'
 heroImage: ''
+tags:
+    - blog
+author: pooja
+category: blog
 ---
 
 # What do you do on weekends? 

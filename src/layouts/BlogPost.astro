@@ -1,25 +1,25 @@
 ---
 import type { CollectionEntry } from 'astro:content';
-import BaseHead from '../components/BaseHead.astro';
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
-import FormattedDate from '../components/FormattedDate.astro';
 import Page from './Page.astro';
 import BlogHeader  from '@/components/blog/BlogHeader.astro';
+import type { BlogPostType } from '@/lib/utils';
+import RelatedPosts from '@/components/blog/RelatedPosts.astro';
 
-type Props = CollectionEntry<'blog'>['data'];
+type Props = {post: BlogPostType, relatedPosts: BlogPostType[]};
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
+const { post, relatedPosts } = Astro.props as Props;
+const { title, description, pubDate, updatedDate, heroImage} = post.data;
 ---
 
 <Page title={title} description={description}>
 	<article>
 		<BlogHeader 
-			{...Astro.props}
+			{...post.data}
         />
 		<div class="prose prose-lg">
 			<slot />
 		</div>
+		<RelatedPosts post={post} relatedPosts={relatedPosts} />
 	</article>
 </Page>
 			

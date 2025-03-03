@@ -1,0 +1,22 @@
+---
+import type { BlogPostType } from '@/lib/utils';
+
+type Props = {post: BlogPostType, relatedPosts: BlogPostType[]};
+
+const { post, relatedPosts } = Astro.props as Props;
+---
+
+{relatedPosts.length > 0 && (
+  <section class="mt-12">
+    <h2 class="text-2xl font-bold">Related Posts</h2>
+    <ul class="space-y-4 mt-4">
+      {relatedPosts.map(post => (
+        <li key={post.id} class="border-b pb-2">
+          <a href={`/blog/${post.slug}`} class="text-blue-600 hover:underline">
+            {post.data.title}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </section>
+)}

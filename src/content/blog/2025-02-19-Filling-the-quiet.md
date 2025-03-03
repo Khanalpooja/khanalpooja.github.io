@@ -3,6 +3,11 @@ title: "Filling the Quiet"
 pubDate: '2025-02-19 10:48'
 description: "Filling the Quiet"
 heroImage: '/national-parks/sidewalk.jpeg'
+author: pooja
+tags:
+  - story
+  - chicago
+category: story
 ---
 
 This part of the city is quiet. The pulsating nightlife, the busy finance folks and the towering skylines- it has none of it. Despite its closeness to the downtown, it still feels far. It feels like a separate small town tucked away from the hustle and bustle of the big city. The most interesting thing in this area is the sidewalk. I find beauty in how the sidewalk changes with every season, and so does the mood of the people. I don’t know what’s my favorite - the golden leaves in fall, flowers blooming in spring or the fresh snow in winter. Maybe not the winter! 
@@ -14,7 +19,7 @@ I  have a neighbor in his early 70s. His back is slightly bent when he walks as 
 
 
 <div class="image-caption">
-  <img src="national-parks/alone.jpg" alt="staring at the sunset alone">
+  <img src="/national-parks/alone.jpg" alt="staring at the sunset alone">
   <!-- <figcaption>
     Staring at the sunset alone
   </figcaption> -->

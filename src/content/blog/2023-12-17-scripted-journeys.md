@@ -3,6 +3,10 @@ title: "Scripted Journeys: Exploring Tech, Travel, and Tales"
 pubDate: 'Jun 16 2023'
 description: 'Starting out new'
 heroImage: ''
+category: blog
+author: pooja
+tags:
+    - blog
 ---
 
 
