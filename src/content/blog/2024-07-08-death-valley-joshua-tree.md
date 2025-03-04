@@ -5,9 +5,9 @@ description: "Southern California's Deserts, Death Valley and Joshua Tree"
 heroImage: '/national-parks/death_valley.jpg'
 tags:
     - national-park
-    - nevada
+    - california
     - travel
-map: nevada
+map: california
 ---
 
 In March 2022, I turned a family wedding in California into a chance for a solo journey across the stark and awe-inspiring deserts of Southern California. Exploring Joshua Tree National Park and Death Valley, I was surrounded by unique landscapes—from the intriguing rock formations of Joshua Tree to the expansive salt flats of Death Valley. This trip became more than just sightseeing; it was an exploration of independence and personal growth amidst some of the most serene yet challenging environments.

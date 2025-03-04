@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 const { src, alt, caption } = Astro.props;
 ---
 
-<Card className="overflow-hidden rounded-lg shadow-xl md:mx-10">
+<Card className="overflow-hidden rounded-lg md:mx-10 shadow-2xl ring-1 ring-gray-300/50 ">
     <CardContent className="px-5 py-0">
         <figure>
             <img src={src} alt={alt} class="w-full object-cover rounded-t-lg" />
