@@ -11,7 +11,7 @@ import alpinejs from '@astrojs/alpinejs';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://example.com',
+    site: 'https://poojakhanal.com.np',
     integrations: [mdx(), sitemap(), react(), tailwind({
         applyBaseStyles: false,
     }), alpinejs()],
