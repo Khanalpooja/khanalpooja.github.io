@@ -26,5 +26,9 @@ export const SOCIALS = [
       url: 'https://github.com/khanalpooja',
       iconClass: 'fa-brands fa-github',
     },
+    {
+      name: 'Resume',
+      url: '/resume.pdf', 
+      iconClass: 'fa-solid fa-file-lines',
+    },
   ];
-  

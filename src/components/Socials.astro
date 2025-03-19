@@ -3,16 +3,23 @@ import {SOCIALS} from '../consts'; // Importing social links data
 
 ---
 
-<div class="flex justify-center space-x-8 mt-6 ">
-    {SOCIALS.map(({ name, url, iconClass }) => (
-      <a
-        href={url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="text-gray-500 hover:text-blue-500 transition duration-200 transform hover:scale-125 flex items-center mb-8"
-      >
-        <i class={`${iconClass} text-4xl`} aria-hidden="true"></i>
-        <span class="sr-only">{name}</span>
-      </a>
-    ))}
+<div class="flex justify-center space-x-8 mt-6">
+  {SOCIALS.map(({ name, url, iconClass }) => (
+    <a
+      href={url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="group relative text-gray-500 hover:text-blue-500 transition duration-200 transform hover:scale-110 flex items-center mb-8"
+    >
+      <i class={`${iconClass} text-4xl`} aria-hidden="true"></i>
+
+      <!-- Tooltip (Now Positioned Below the Icon) -->
+      <span class="absolute top-12 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 bg-gray-800 text-white text-xs font-medium px-2 py-1 rounded-md transition-opacity duration-200 whitespace-nowrap">
+        {name}
+      </span>
+
+      <!-- Screen reader accessibility -->
+      <span class="sr-only">{name}</span>
+    </a>
+  ))}
 </div>

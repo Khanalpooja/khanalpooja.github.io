@@ -1,0 +1,83 @@
+---
+import ExperienceItem from "@/components/resume/ExperienceItem.astro";
+import EducationItem from "@/components/resume/EducationItem.astro";
+import Page from "@/layouts/Page.astro";
+import { resume } from "@/data/resume";
+
+
+---
+
+<Page>
+    <section
+        class="max-w-3xl mx-auto p-8 bg-white dark:bg-gray-900 rounded-xl shadow-xl transition-all duration-300"
+    >
+        <!-- Header Section -->
+        <header class="text-center">
+            <img
+                src="/me.jpg"
+                alt="Pooja Khanal"
+                class="w-32 h-32 mx-auto rounded-full border-4 border-gray-300 dark:border-gray-700 shadow-md transition-transform duration-300 hover:scale-105"
+            />
+            <h1 class="text-4xl font-bold mt-4 dark:text-white">
+                Pooja Khanal
+            </h1>
+            <p class="text-lg text-gray-600 dark:text-gray-300">
+                Software Developer | QA Automation | AI & Data Science
+            </p>
+
+            <!-- Resume Download Button -->
+            <div class="mt-4">
+                <a
+                    href="/resume.pdf"
+                    download
+                    class="inline-block bg-blue-600 text-white px-5 py-2 rounded-lg hover:bg-blue-700 hover:shadow-lg transition-all duration-300"
+                >
+                    📄 Download Resume
+                </a>
+            </div>
+        </header>
+        <br/>
+        <h2 class="text-4xl text-gray-800 dark:text-white mt-10 border-b pb-2">Career Highlights</h2>
+        <!-- Experience Section -->
+        <h2
+            class="text-2xl font-semibold text-gray-800 dark:text-white mt-10 border-b pb-2"
+        >
+            Experience
+        </h2>
+        <div
+            class="relative border-l-4 border-gray-300 dark:border-gray-700 ml-6 mt-6"
+        >
+            {resume.experience.map((job) => <ExperienceItem {...job} />)}
+        </div>
+
+        <!-- Education Section -->
+        <h2
+            class="text-2xl font-semibold text-gray-800 dark:text-white mt-10 border-b pb-2"
+        >
+            Education
+        </h2>
+        <div
+            class="relative border-l-4 border-gray-300 dark:border-gray-700 ml-6 mt-6"
+        >
+            {resume.education.map((edu) => <EducationItem {...edu} />)}
+        </div>
+
+        <!-- Skills Section -->
+    <h2 class="text-2xl font-semibold text-gray-800 dark:text-white mt-10 border-b pb-2">Skills</h2>
+    <div class="mt-6 grid grid-cols-2 gap-4">
+      {Object.entries(resume.skills).map(([category, skillList]) => (
+        <div>
+          <h3 class="text-lg font-semibold text-gray-700 dark:text-gray-300">{category.replace(/([A-Z])/g, ' $1').trim()}</h3>
+          <div class="flex flex-wrap gap-2 mt-2">
+            {skillList.map((skill) => (
+              <span class="bg-blue-200 text-blue-800 dark:bg-blue-900 dark:text-blue-200 px-3 py-1 text-sm rounded-full transition-all duration-300 hover:bg-blue-300 dark:hover:bg-blue-700">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
+      ))}
+    </div>
+
+    </section>
+</Page>
