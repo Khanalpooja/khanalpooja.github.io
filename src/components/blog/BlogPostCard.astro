@@ -2,19 +2,37 @@
 // src/components/BlogListItem.astro
 import FormattedDate from "@/components/FormattedDate.astro";
 import type { CollectionEntry } from "astro:content";
+import placeholder from "@/assets/default-images/blog-placeholder.jpg";
+import { Image } from "astro:assets";
+import { getImageBySrcPath } from "@/lib/utils";
 
 const { post } = Astro.props as { post: CollectionEntry<"blog"> };
+
+const heroImagePath = post.data.heroImage ?? "";
+const image = getImageBySrcPath(heroImagePath);
 ---
 
 <li class="flex items-center space-x-4 ml-8">
     <a href={`/blog/${post.id}/`} class="flex items-center space-x-4">
-        <img
-            src={post.data.heroImage
-                ? post.data.heroImage
-                : "/default-images/blog-placeholder.jpg"}
-            alt=""
-            class="w-28 h-28 rounded-lg object-cover"
-        />
+        {image ? (
+            <Image
+              src={image}
+              alt=""
+              width={112}
+              height={112}
+              format="webp"
+              class="rounded-lg object-cover"
+            />
+          ) : (
+            <img
+              src={placeholder.src}
+              alt=""
+              class="w-28 h-28 rounded-lg object-cover"
+              loading="lazy"
+              decoding="async"
+            />
+          )}
+      
         <div class="leading-tight">
             <h4 class="text-lg font-semibold text-gray-800 hover:text-blue-600">
                 {post.data.title}

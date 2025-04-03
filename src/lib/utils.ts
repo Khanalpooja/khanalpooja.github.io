@@ -44,3 +44,15 @@ export function getRelatedPosts(posts: BlogPostType[], currentPost: BlogPostType
     .slice(0, limit) // Limit the number of related posts
     .map(entry => entry.post); // Return only the posts
 }
+
+// src/lib/utils.ts or utils/imageMap.ts
+export const images = import.meta.glob(
+  "/src/assets/**/*.{jpg,jpeg,png,webp}",
+  { eager: true }
+) as Record<string, { default: ImageMetadata }>;
+
+export function getImageBySrcPath(src: string) {
+  const normalized = src.startsWith("/") ? src : `/${src}`;
+  const fullPath = `/src/assets${normalized}`;
+  return images[fullPath]?.default;
+}

@@ -1,6 +1,8 @@
 ---
 import FormattedDate from "@/components/FormattedDate.astro";
 import Divider from "@/components/ui/divider";
+import { Image } from "astro:assets";
+import { getImageBySrcPath } from "@/lib/utils"; // Your centralized helper
 
 const {
     title,
@@ -22,7 +24,7 @@ const {
     tags?: string[];
 };
 
-import { Image } from "astro:assets";
+const image = heroImage ? getImageBySrcPath(heroImage) : null;
 ---
 <header class="mb-8 text-center">
     <!-- Title -->
@@ -30,16 +32,30 @@ import { Image } from "astro:assets";
 
     <!-- Hero Image (Centered) -->
     {heroImage && (
-        <div class="hero-image mx-auto my-6 flex justify-center">
-            <img
-            src={heroImage}
-            alt={title}
-            class="rounded-lg object-contain shadow-lg
-                    max-w-full max-h-[500px] 
-                    portrait:max-h-[100vw] portrait:w-auto
-                    landscape:max-w-[100%] landscape:h-auto"
-            />
-        </div>
+        <div class="mx-auto my-6 flex justify-center">
+  <div class="overflow-hidden rounded-lg shadow-lg max-w-full max-h-[500px]">
+    {image ? (
+      <Image
+        src={image}
+        alt={title}
+        width={1200}
+        format="webp"
+        sizes="(min-width: 768px) 100vw, 100vw"
+        class="w-auto h-auto max-h-[500px]"
+      />
+    ) : (
+      <img
+        src={heroImage}
+        alt={title}
+        loading="lazy"
+        decoding="async"
+        class="w-auto h-auto max-h-[500px]"
+      />
+    )}
+  </div>
+</div>
+
+            
     )}
       
 

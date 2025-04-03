@@ -9,13 +9,23 @@ import Divider from "@/components/ui/divider";
 import '@/styles/global.css';
 import RecentPosts from "@/components/blog/RecentPosts.astro";
 import Socials from "@/components/Socials.astro";
+
+import frontImage from "@/assets/me.jpg";
+import { Image } from "astro:assets";
 ---
 
 <Page>
 	<h2 class="text-center">Code, Campfires, and Cool Stories!</h2>
 	<Divider />
 	<br />
-	<img src="/me.jpg" alt="Me" class="mx-auto rounded-full w-full md:w-1/2 sm:w-2/3" />
+	<Image
+		src={frontImage}
+		alt="Me"
+		width={600}
+		format="webp"
+		sizes="(min-width: 768px) 50vw, 100vw"
+		class="mx-auto rounded-full w-full md:w-1/2"
+	/>
 	<Socials />
 
 	<p>Hello, I'm Pooja!</p>

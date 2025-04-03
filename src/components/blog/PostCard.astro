@@ -1,23 +1,39 @@
 ---
 import { Card, CardContent } from "@/components/ui/card";
+import { getImageBySrcPath } from '@/lib/utils';
+import { Image } from 'astro:assets';
 
 const { src, alt, caption } = Astro.props;
+const image = getImageBySrcPath(src);
 ---
 
 <Card className="overflow-hidden rounded-lg md:mx-10 sm:mt-2 md:mt-4 shadow-2xl ring-1 ring-gray-300/50">
     <CardContent className="px-5 py-0">
-        <figure class="rounded-t-lg overflow-hidden">
-            <img
-                src={src}
-                alt={alt}
-                class="w-full h-auto max-h-[30vw] object-contain"
-            />
-            {caption && (
-                <figcaption class="text-center text-3xl text-gray-600 font-handwritten">
-                    {caption}
-                </figcaption>
-            )}
-        </figure>
+      <figure class="rounded-t-lg overflow-hidden">
+        {image ? (
+          <Image
+            src={image}
+            alt={alt}
+            width={1200}
+            format="webp"
+            sizes="(min-width: 768px) 75vw, 100vw" 
+            class="w-full h-auto max-h-[30vw] object-contain"
+          />
+        ) : (
+          <img
+            src={src}
+            alt={alt}
+            class="w-full h-auto max-h-[30vw] object-contain"
+            loading="lazy"
+            decoding="async"
+          />
+        )}
+  
+        {caption && (
+          <figcaption class="text-center text-3xl text-gray-600 font-handwritten">
+            {caption}
+          </figcaption>
+        )}
+      </figure>
     </CardContent>
-</Card>
-
+  </Card>
