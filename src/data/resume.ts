@@ -2,7 +2,7 @@ export const resume = {
     experience: [
         {
             title: "Software Developer",
-            company: "Freelance",
+            company: "Personal Projects",
             location: "Remote",
             date: "Nov 2023 – Present",
             description:
