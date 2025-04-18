@@ -1,0 +1,24 @@
+---
+import GalleryComponent from './GalleryComponent.jsx';
+import { getImage } from 'astro:assets';
+
+const { galleryId = 'gallery', images } = Astro.props;
+
+const optimizedImages = await Promise.all(
+  images.map(async (img) => {
+    const optimizedFull = await getImage({ src: img.src, width: 1920 });
+    const optimizedThumb = await getImage({ src: img.src, width: 600 });
+
+    return {
+      fullSrc: optimizedFull.src,
+      thumbSrc: optimizedThumb,
+      width: optimizedFull.attributes.width,
+      height: optimizedFull.attributes.height,
+      caption: img.caption,
+      alt: img.alt,
+    };
+  })
+);
+---
+
+<GalleryComponent client:load images={optimizedImages} galleryId={galleryId} />
