@@ -1,0 +1,31 @@
+---
+import GalleryComponent from './CarouselComponent.jsx';
+import { images } from '@/lib/utils';
+import { getImage } from 'astro:assets';
+
+const { imageFolder, galleryId = 'gallery' } = Astro.props;
+
+const imagePaths = Object.keys(images).filter((path) =>
+  path.startsWith(`/src/assets/${imageFolder}/`)
+);
+
+const optimizedImages = await Promise.all(
+  imagePaths.map(async (path) => {
+    const imported = images[path].default;
+
+    const optimizedFull = await getImage({ src: imported, width: 1920 });
+
+    const optimizedThumb = await getImage({ src: imported, width: 300 });
+
+    return {
+      thumbSrc: optimizedThumb,
+      fullSrc: optimizedFull.src,
+      width: optimizedFull.attributes.width,
+      height: optimizedFull.attributes.height,
+    };
+  })
+);
+
+---
+
+<GalleryComponent client:load images={optimizedImages} galleryId={galleryId} />
