@@ -23,7 +23,7 @@ const image = heroSrc.startsWith('http') ? heroSrc : SITE_URL + heroSrc;
 // const heroPath = heroImage ? getImageBySrcPath(heroImage).src: SITE_IMAGE;
 ---
 
-<Page title={title} description={description} image={heroPath}>
+<Page title={title} description={description} image={image}>
 	<article>
 		<BlogHeader 
 			{...post.data}
