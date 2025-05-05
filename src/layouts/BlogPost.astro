@@ -4,14 +4,26 @@ import Page from './Page.astro';
 import BlogHeader  from '@/components/blog/BlogHeader.astro';
 import type { BlogPostType } from '@/lib/utils';
 import RelatedPosts from '@/components/blog/RelatedPosts.astro';
+import { getImageBySrcPath } from '@/lib/utils';
+import { SITE_URL, SITE_IMAGE } from '@/consts';
+
+
 
 type Props = {post: BlogPostType, relatedPosts: BlogPostType[]};
 
 const { post, relatedPosts } = Astro.props as Props;
 const { title, description, pubDate, updatedDate, heroImage} = post.data;
+const heroPath = heroImage ? getImageBySrcPath(heroImage) : SITE_IMAGE;
+const heroMeta = heroImage ? getImageBySrcPath(heroImage) : undefined;
+const heroSrc = heroMeta?.src ?? SITE_IMAGE;
+const image = heroSrc.startsWith('http') ? heroSrc : SITE_URL + heroSrc;
+
+
+
+// const heroPath = heroImage ? getImageBySrcPath(heroImage).src: SITE_IMAGE;
 ---
 
-<Page title={title} description={description}>
+<Page title={title} description={description} image={heroPath}>
 	<article>
 		<BlogHeader 
 			{...post.data}

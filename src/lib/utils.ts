@@ -56,3 +56,5 @@ export function getImageBySrcPath(src: string) {
   const fullPath = `/src/assets${normalized}`;
   return images[fullPath]?.default;
 }
+
+

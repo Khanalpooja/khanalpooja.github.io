@@ -5,6 +5,7 @@ export const SITE_TITLE = 'Pooja Khanal';
 export const SITE_DESCRIPTION = 'Welcome to my website!';
 export const NAME = 'Pooja Khanal';
 export const SITE_IMAGE = '/me.jpg';
+export const SITE_URL = 'https://poojakhanal.com.np';
 export const SOCIALS = [
     {
       name: 'Email',
