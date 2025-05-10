@@ -12,6 +12,9 @@ import Socials from "@/components/Socials.astro";
 
 import frontImage from "@/assets/me.jpg";
 import { Image } from "astro:assets";
+import Gallery from "@/components/gallery/Gallery.astro";
+import Carousel from "@/components/gallery/Carousel.astro";
+import {bbnpGallery} from "@/data/gallery/bbnp";
 ---
 
 <Page>
@@ -33,6 +36,9 @@ import { Image } from "astro:assets";
 	Let's navigate remote places, new ideas, and life's journeys together!
 
 	<RecentPosts />
+
+	<!-- <Gallery galleryId="bbnp" images={bbnpGallery} />
+	<Carousel galleryId="carousel" imageFolder="national-parks/bbnp" /> -->
 
 	<!-- <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div>
